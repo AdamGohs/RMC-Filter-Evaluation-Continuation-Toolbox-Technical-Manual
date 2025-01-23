@@ -8,6 +8,7 @@ rmd_files: [
   "chapters/01-introduction.Rmd",
   "chapters/02-terms-and-conditions-for-use.Rmd",
   "chapters/03-general-overview.Rmd",
+  "chapters/04-background.Rmd",
 ]
 
 

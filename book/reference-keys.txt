@@ -5,6 +5,7 @@ fig:figure-4
 fig:figure-5
 fig:figure-6
 fig:figure-7
+fig:figure-8
 introduction
 terms-and-conditions-for-use
 terms-and-conditions-for-use-of-institute-for-water-resources-software
@@ -14,3 +15,4 @@ indemnity
 general-overview
 getting-started
 organization
+background
