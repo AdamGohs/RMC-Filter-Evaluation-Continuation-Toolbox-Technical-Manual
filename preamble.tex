@@ -1,0 +1,16 @@
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{natbib} % Required for bibliography
+\usepackage{csquotes} % Provides advanced quoting and citation features
+
+% Define the citation-note environment if it's required
+\newenvironment{citation-note}
+    {\begin{quote}\itshape}
+    {\end{quote}}
+
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
