@@ -1,7 +1,7 @@
 # RMC Filter Evaluation (Continuation) Toolbox Technical Manual
 This repository contains the R Bookdown files for the RMC Filter Evaluation (Continuation) Toolbox Technical Manual
 
-- [Version Beta]
+- [Beta]
 
 ## Versioning System for Online Book Updates
 To maintain clarity and transparency in the evolution of this online book, we use a structured versioning system that distinguishes between significant updates and smaller changes. The versioning format follows a **Major.Minor** structure:

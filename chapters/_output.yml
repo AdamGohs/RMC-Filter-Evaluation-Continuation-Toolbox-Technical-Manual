@@ -4,7 +4,7 @@ bookdown::bs4_book:
   theme:
     primary: "#4D6F8D"
   repo:
-    base: "https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual/chapters"
+    base: "https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual"
     branch: main
     subdir: chapters
   includes:
