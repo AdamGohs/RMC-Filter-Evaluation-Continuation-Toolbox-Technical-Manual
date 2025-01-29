@@ -73,3 +73,6 @@ ul.hidden-level-2 {
   padding-left: 0; /* Adjust as needed */
 }
 
+img {
+  image-rendering: optimizeQuality;
+}
