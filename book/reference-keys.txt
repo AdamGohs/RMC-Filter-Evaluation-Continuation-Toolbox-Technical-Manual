@@ -6,6 +6,7 @@ fig:figure-5
 fig:figure-6
 fig:figure-7
 fig:figure-8
+fig:figure-9
 introduction
 terms-and-conditions-for-use
 terms-and-conditions-for-use-of-institute-for-water-resources-software
@@ -16,3 +17,5 @@ general-overview
 getting-started
 organization
 background
+filter-gradation
+filter-gradation-1
