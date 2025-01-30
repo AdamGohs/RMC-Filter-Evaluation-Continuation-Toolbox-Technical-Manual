@@ -13,6 +13,11 @@ fig:figure-10
 fig:figure-11
 fig:figure-12
 fig:figure-13
+fig:figure-14
+fig:figure-15
+fig:figure-16
+fig:figure-17
+fig:figure-18
 introduction
 terms-and-conditions-for-use
 terms-and-conditions-for-use-of-institute-for-water-resources-software
@@ -29,3 +34,4 @@ filter-gradation-after-segregation-or-washout
 base-gradation
 base-soil-gradation
 needs-assessment-for-regrading
+base-soil-gradation-after-regrading

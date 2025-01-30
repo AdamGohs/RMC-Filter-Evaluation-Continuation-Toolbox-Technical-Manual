@@ -29,3 +29,31 @@ Figure \@ref(fig:figure-13) is an example of the summary of the needs assessment
 ```{r figure-13, echo=FALSE, fig.align="center", fig.cap="Step 2 of Base Gradation worksheet: Needs assessment for regrading.", out.width="100%"}
 knitr::include_graphics("images/figure13.png")
 ```
+
+## Base Soil Gradation After Regrading
+
+In step 3, the method of computational regrading is based on the results in step 2. If regrading is not required, “N/A” displays. If the base soil is gap-graded, use the drop-down list to select the sieve size closest to the upper size where the gradation curve has a point of inflection, and the corresponding particle size displays. Cells that do not apply have a gray background. A particle size of 4.75 mm displays if regrading on the No. 4 sieve is required. Figure \@ref(fig:figure-14) through Figure \@ref(fig:figure-16) illustrate the three possible scenarios.
+
+```{r figure-14, echo=FALSE, fig.align="center", fig.cap="Step 3 of Base Gradation worksheet: No regrading.", out.width="100%"}
+knitr::include_graphics("images/figure14.png")
+```
+
+```{r figure-15, echo=FALSE, fig.align="center", fig.cap="Step 3 of Base Gradation worksheet: Regrading on the No. 4 sieve.", out.width="100%"}
+knitr::include_graphics("images/figure15.png")
+```
+
+```{r figure-16, echo=FALSE, fig.align="center", fig.cap="Step 3 of Base Gradation worksheet: Regrading on missing sieve size for gap-graded soils.", out.width="100%"}
+knitr::include_graphics("images/figure16.png")
+```
+
+If regrading is required, the base soil is regraded to the appropriate maximum particle size. For Regrade the base soil to 100 percent passing the No. 4 sieve, the percentage passing each sieve size of the original base soil is divided by the percentage passing the No. 4 sieve of the original base soil, multiplied by 100 percent, as shown in Figure \@ref(fig:figure-17). The procedure for regrading a gap graded base soil is the same, except to regrade on the particle size that is missing instead of the No. 4 sieve.
+
+```{r figure-17, echo=FALSE, fig.align="center", fig.cap="Example regrading calculation on No. 4 sieve (United States Bureau of Reclamation [USBR] 2011).", out.width="100%"}
+knitr::include_graphics("images/figure17.png")
+```
+
+Figure \@ref(fig:figure-18) is an example gradation of the regraded base soil. If regrading is not required, the gradation from step 1 displays and is used for calculations on subsequent worksheets where gradations after regrading are required input. The summary of the particle-size analysis for the regraded base soil is the same as the filter material, except *C<sub>u</sub>* and *C<sub>c</sub>* are not calculated for the regraded base soil.
+
+```{r figure-18, echo=FALSE, fig.align="center", fig.cap="Step 3 of Base Gradation worksheet: Regraded base soil gradation.", out.width="100%"}
+knitr::include_graphics("images/figure18.png")
+```
