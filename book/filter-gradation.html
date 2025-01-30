@@ -75,6 +75,33 @@
 Figure 5.1: Filter Gradation worksheet: Gradation input.
 </p>
 </div>
+<p>Figure <a href="filter-gradation.html#fig:figure-10">5.2</a> is an example of the summary of the particle-size analysis for the user-specified gradations. The gravel percentage (including coarse and fine gravel percentages), sand percentage (including coarse, medium, and fine sand percentages), fines content (FC) (including estimated silt and clay percentages), coefficient of uniformity (Cu) and coefficient of curvature (Cc) for the coarsest and finest filter material are calculated according to the Unified Soil Classification System (American Society of Testing and Materials [ASTM] D2487). An average percentage is also calculated.</p>
+<p>The coefficient of uniformity (<em>C<sub>u</sub></em>) is calculated as:</p>
+<p><span class="math display" id="eq:equation-1">\[\begin{equation}
+    C_u = \frac{D_{60}}{D_{10}}
+    \tag{5.1}
+\end{equation}\]</span></p>
+<p>where:</p>
+<blockquote>
+<p><em>D<sub>10</sub></em> = particle-size diameter corresponding to 10 percent passing on the cumulative particle-size distribution curve
+<em>D<sub>60</sub></em> = particle-size diameter corresponding to 60 percent passing on the cumulative particle-size distribution curve</p>
+</blockquote>
+<p>The coefficient of curvature (<em>C<sub>c</sub></em>) is calculated as:</p>
+<p><span class="math display" id="eq:equation-2">\[\begin{equation}
+    C_c = \frac{(D_{30})^2}{D_{10} D_{60}}
+    \tag{5.2}
+\end{equation}\]</span></p>
+<p>where:</p>
+<blockquote>
+<p><em>D<sub>30</sub></em> = particle-size diameter corresponding to 30 percent passing on the cumulative particle-size distribution curve</p>
+</blockquote>
+<p>If a gradation does not specify the particle size corresponding to 10 percent passing, 30 percent passing, or 60 percent passing, <em>C<sub>u</sub></em> and <em>C<sub>c</sub></em> are not calculated.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-10"></span>
+<img src="images/figure10.png" alt="Filter gradation worksheet: Summary of particle-size analysis." width="100%"><p class="caption">
+Figure 5.2: Filter gradation worksheet: Summary of particle-size analysis.
+</p>
+</div>
 
 </div>
 </div>
@@ -111,6 +138,34 @@ Figure 5.1: Filter Gradation worksheet: Gradation input.
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>

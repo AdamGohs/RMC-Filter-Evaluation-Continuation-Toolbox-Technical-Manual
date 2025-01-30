@@ -7,6 +7,9 @@ fig:figure-6
 fig:figure-7
 fig:figure-8
 fig:figure-9
+eq:equation-1
+eq:equation-2
+fig:figure-10
 introduction
 terms-and-conditions-for-use
 terms-and-conditions-for-use-of-institute-for-water-resources-software

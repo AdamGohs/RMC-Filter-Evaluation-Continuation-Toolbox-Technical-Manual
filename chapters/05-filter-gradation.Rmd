@@ -13,3 +13,34 @@ The user-specified percent finer (by weight) for the filter material gradation (
 ```{r figure-9, echo=FALSE, fig.align="center", fig.cap="Filter Gradation worksheet: Gradation input.", out.width="100%"}
 knitr::include_graphics("images/figure9.png")
 ```
+
+Figure \@ref(fig:figure-10) is an example of the summary of the particle-size analysis for the user-specified gradations. The gravel percentage (including coarse and fine gravel percentages), sand percentage (including coarse, medium, and fine sand percentages), fines content (FC) (including estimated silt and clay percentages), coefficient of uniformity (Cu) and coefficient of curvature (Cc) for the coarsest and finest filter material are calculated according to the Unified Soil Classification System (American Society of Testing and Materials [ASTM] D2487). An average percentage is also calculated.
+
+The coefficient of uniformity (*C<sub>u</sub>*) is calculated as:
+
+\begin{equation}
+    C_u = \frac{D_{60}}{D_{10}}
+    (\#eq:equation-1)
+\end{equation}
+
+where:
+
+> *D<sub>10</sub>* = particle-size diameter corresponding to 10 percent passing on the cumulative particle-size distribution curve
+> *D<sub>60</sub>* = particle-size diameter corresponding to 60 percent passing on the cumulative particle-size distribution curve
+
+The coefficient of curvature (*C<sub>c</sub>*) is calculated as:
+
+\begin{equation}
+    C_c = \frac{(D_{30})^2}{D_{10} D_{60}}
+    (\#eq:equation-2)
+\end{equation}
+
+where: 
+
+> *D<sub>30</sub>* = particle-size diameter corresponding to 30 percent passing on the cumulative particle-size distribution curve
+
+If a gradation does not specify the particle size corresponding to 10 percent passing, 30 percent passing, or 60 percent passing, *C<sub>u</sub>* and *C<sub>c</sub>* are not calculated.
+
+```{r figure-10, echo=FALSE, fig.align="center", fig.cap="Filter gradation worksheet: Summary of particle-size analysis.", out.width="100%"}
+knitr::include_graphics("images/figure10.png")
+```
