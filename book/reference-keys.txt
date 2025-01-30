@@ -10,6 +10,9 @@ fig:figure-9
 eq:equation-1
 eq:equation-2
 fig:figure-10
+fig:figure-11
+fig:figure-12
+fig:figure-13
 introduction
 terms-and-conditions-for-use
 terms-and-conditions-for-use-of-institute-for-water-resources-software
@@ -22,3 +25,7 @@ organization
 background
 filter-gradation
 filter-gradation-1
+filter-gradation-after-segregation-or-washout
+base-gradation
+base-soil-gradation
+needs-assessment-for-regrading

@@ -44,3 +44,17 @@ If a gradation does not specify the particle size corresponding to 10 percent pa
 ```{r figure-10, echo=FALSE, fig.align="center", fig.cap="Filter gradation worksheet: Summary of particle-size analysis.", out.width="100%"}
 knitr::include_graphics("images/figure10.png")
 ```
+
+## Filter Gradation After Segregation or Washout
+
+The filter material may be susceptible to segregation or internal instability. Segregation is the tendency of large particles in a given mass of aggregate to gather together when the material is loaded, transported, or otherwise disturbed.
+
+Segregation can cause pockets of coarse zones that may not be filter-compatible with the material being protected. FEMA (2011) provides filter design guidance to limit segregation potential based on the maximum *D<sub>90</sub>F* and the minimum *D<sub>10</sub>F*. This segregation criteria consider only the design gradation, and the potential for segregation during storing, hauling, dumping, spreading, and compacting must also be considered, which is more subjective and relies on indirect evidence such as construction photographs.
+
+Internal instability describes the loss of soil particles because of seepage. Finer particles in the soil can move within the soil mass under the forces imposed on the particles by seepage flow. Gap-graded or broadly graded soils are examples of internally unstable soils. The RMC Internal Instability Toolbox assesses the susceptibility of the filter material to internal instability. Soils which are susceptible to internal instability are also susceptible to segregation.
+
+Segregation and internal instability result in a coarser filter. Figure \@ref(fig:figure-11) illustrates an event tree node that can be added to explicitly consider the likelihood of the filter being segregated or internally unstable during a risk assessment. The particle retention evaluation must consider two gradations of the filter material. Perform the first evaluation using the original or stable gradation and perform the second evaluation using the adjusted gradation after segregation or washout of the erodible finer fraction.
+
+```{r figure-11, echo=FALSE, fig.align="center", fig.cap="Event tree considerations for segregation or washout of finer fraction.", out.width="100%"}
+knitr::include_graphics("images/figure11.png")
+```
