@@ -10,7 +10,7 @@ Use the drop-down list to select the sieve size that defines the gradation of th
 
 The user-specified percent finer (by weight) for the filter material gradation (F) is the percentage of material passing each sieve size or percentage of particles finer than the diameter given by Stokes’ Law for hydrometer analysis. The input must be a decimal number consisting of a whole number and a fractional part (e.g., 100.0 for 100.0 percent passing, 25.5 for 25.5 percent passing). Cells that do not apply or do not require user-specified input have a gray background. Figure \@ref(fig:figure-9) is an example of the gradation input.
 
-```{r figure-9, echo=FALSE, fig.align="center", fig.cap="Filter Gradation worksheet: Gradation input.", out.width="100%"}
+```{r figure-9, echo=FALSE, fig.align="center", fig.cap="Filter Gradation worksheet: Gradation input.", out.width="60%"}
 knitr::include_graphics("images/figure9.png")
 ```
 

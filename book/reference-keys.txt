@@ -39,6 +39,11 @@ fig:figure-33
 fig:figure-34
 fig:figure-35
 fig:figure-36
+fig:figure-37
+fig:figure-38
+fig:figure-39
+fig:figure-40
+fig:figure-41
 introduction
 terms-and-conditions-for-use
 terms-and-conditions-for-use-of-institute-for-water-resources-software
@@ -72,3 +77,8 @@ constricted-exit
 base-soil-characterization-2
 open-joint-defect-or-crack-characterization
 likelihood-of-continuation
+permeability
+base-soil-characterization-3
+filter-material-characterization-2
+permeability-criterion
+appendix-a---acronyms

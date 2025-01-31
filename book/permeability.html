@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>11 Permeability | RMC Filter Evaluation (Continuation) Toolbox Technical Manual</title>
+<meta name="author" content="Adam C. Gohs">
+<meta name="description" content="This worksheet assesses whether the filter material meets the drainage criterion for permeability. It requires no user-specified input. Permeability is directly proportional to the square of the...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="11 Permeability | RMC Filter Evaluation (Continuation) Toolbox Technical Manual">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://www.rmc.usace.army.mil/permeability.html">
+<meta property="og:description" content="This worksheet assesses whether the filter material meets the drainage criterion for permeability. It requires no user-specified input. Permeability is directly proportional to the square of the...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="11 Permeability | RMC Filter Evaluation (Continuation) Toolbox Technical Manual">
+<meta name="twitter:description" content="This worksheet assesses whether the filter material meets the drainage criterion for permeability. It requires no user-specified input. Permeability is directly proportional to the square of the...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.8.0/transition.js"></script><script src="libs/bs3compat-0.8.0/tabs.js"></script><script src="libs/bs3compat-0.8.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+          margin-bottom: 0em;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">RMC Filter Evaluation (Continuation) Toolbox Technical Manual</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Preface</a></li>
+<li><a class="" href="introduction.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="terms-and-conditions-for-use.html"><span class="header-section-number">2</span> Terms and Conditions for Use</a></li>
+<li><a class="" href="general-overview.html"><span class="header-section-number">3</span> General Overview</a></li>
+<li><a class="" href="background.html"><span class="header-section-number">4</span> Background</a></li>
+<li><a class="" href="filter-gradation.html"><span class="header-section-number">5</span> Filter Gradation</a></li>
+<li><a class="" href="base-gradation.html"><span class="header-section-number">6</span> Base Gradation</a></li>
+<li><a class="" href="design-for-particle-retention.html"><span class="header-section-number">7</span> Design for Particle Retention</a></li>
+<li><a class="" href="foster-and-fell.html"><span class="header-section-number">8</span> Foster and Fell</a></li>
+<li><a class="" href="summary-plot.html"><span class="header-section-number">9</span> Summary Plot</a></li>
+<li><a class="" href="constricted-exit.html"><span class="header-section-number">10</span> Constricted Exit</a></li>
+<li><a class="active" href="permeability.html"><span class="header-section-number">11</span> Permeability</a></li>
+<li><a class="" href="references.html">References</a></li>
+<li><a class="" href="appendix-a---acronyms.html"><span class="header-section-number">12</span> Appendix A - Acronyms</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="permeability" class="section level1" number="11">
+<h1>
+<span class="header-section-number">11</span> Permeability<a class="anchor" aria-label="anchor" href="#permeability"><i class="fas fa-link"></i></a>
+</h1>
+<p>This worksheet assesses whether the filter material meets the drainage criterion for permeability. It requires no user-specified input. Permeability is directly proportional to the square of the effective particle size with all other factors being equal. Typically, the permeability of a filter should be at least 16 to 25 times that of the base material. This criterion is generally met if <em>D<sub>15</sub>F</em> is larger than 4 to 5 times <em>D<sub>15</sub>B</em>. In some very broadly graded base soils, this requirement may be difficult to meet.</p>
+<div id="base-soil-characterization-3" class="section level2" number="11.1">
+<h2>
+<span class="header-section-number">11.1</span> Base Soil Characterization<a class="anchor" aria-label="anchor" href="#base-soil-characterization-3"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 1 characterizes the base soil. FEMA (2011) indicates the coarsest <em>D<sub>15</sub>B</em> before regrading is used to evaluate permeability requirements. Step 1 obtains the coarsest <em>D<sub>15</sub>B</em> before regrading from the Base Gradation worksheet, where it is interpolated using a logarithmic scale for particle size and linear scale for percent passing. Figure <a href="permeability.html#fig:figure-38">11.1</a> is an example of step 1.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-38"></span>
+<img src="images/figure38.png" alt="Step 1 of Permeability worksheet: Base soil characterization." width="100%"><p class="caption">
+Figure 11.1: Step 1 of Permeability worksheet: Base soil characterization.
+</p>
+</div>
+</div>
+<div id="filter-material-characterization-2" class="section level2" number="11.2">
+<h2>
+<span class="header-section-number">11.2</span> Filter Material Characterization<a class="anchor" aria-label="anchor" href="#filter-material-characterization-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 2 characterizes the filter material. The finest <em>D<sub>15</sub>F</em> is obtained from the Filter Gradation worksheet, where it is interpolated using a logarithmic scale for particle size and linear scale for percent passing. Figure <a href="permeability.html#fig:figure-39">11.2</a> is an example of step 2.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-39"></span>
+<img src="images/figure39.png" alt="Step 2 of Permeability worksheet: Filter material characterization." width="100%"><p class="caption">
+Figure 11.2: Step 2 of Permeability worksheet: Filter material characterization.
+</p>
+</div>
+</div>
+<div id="permeability-criterion" class="section level2" number="11.3">
+<h2>
+<span class="header-section-number">11.3</span> Permeability Criterion<a class="anchor" aria-label="anchor" href="#permeability-criterion"><i class="fas fa-link"></i></a>
+</h2>
+<p>The criterion for permeability is that the filter material has a minimum <em>D<sub>15</sub>F</em> that is an integer multiplier of the coarsest <em>D<sub>15</sub>B</em> before regrading but not less than 0.1 mm. USACE Engineer Manual (EM) 1110-2-1901 (2005) requires a multiplier of 3 to 5. However, USBR (2011) and National Resources Conservation Service (NRCS) (2017) require a multiplier of 5, which is considered the primary criterion on this worksheet. The minimum <em>D<sub>15</sub>F</em> of the filter material is calculated as in the following equation.</p>
+<p><span class="math display" id="eq:equation-4">\[\begin{equation}
+    D_{15}F = 5D_{15}B \text{ but not less than 0.1 mm}
+    \tag{8.2}
+\end{equation}\]</span></p>
+<p>where:</p>
+<blockquote>
+<p><em>D<sub>15</sub>F</em> = particle-size diameter of the filter material corresponding to 15 percent passing on the cumulative particle-size distribution curve<br><em>D<sub>15</sub>B</em> = particle-size diameter of the base soil corresponding to 15 percent passing on the cumulative particle-size distribution curve before regrading</p>
+</blockquote>
+<p>Step 3 evaluates the permeability criterion for integer multipliers ranging from 3 to 5. If the criterion is met, “Meets” displays next to the calculation. If the criterion is not met, “Fails” displays next to the calculation. A green background displays if the criterion is met, and an orange background displays if the criterion is not met. Based on the primary criterion using a multiplier of 5, a statement appears after the set of calculations indicating whether the filter material is sufficiently permeable to perform the required drainage function. Examples of the two possible scenarios for the primary filter criterion are shown in Figure <a href="permeability.html#fig:figure-40">11.3</a> and Figure <a href="permeability.html#fig:figure-41">11.4</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-40"></span>
+<img src="images/figure40.png" alt="Step 3 of Permeability worksheet: Primary permeability criteria not met." width="100%"><p class="caption">
+Figure 11.3: Step 3 of Permeability worksheet: Primary permeability criteria not met.
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-41"></span>
+<img src="images/figure41.png" alt="Step 3 of Permeability worksheet: Primary permeability criteria met." width="100%"><p class="caption">
+Figure 11.4: Step 3 of Permeability worksheet: Primary permeability criteria met.
+</p>
+</div>
+
+<!--  -->
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="constricted-exit.html"><span class="header-section-number">10</span> Constricted Exit</a></div>
+<div class="next"><a href="references.html">References</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#permeability"><span class="header-section-number">11</span> Permeability</a></li>
+<li><a class="nav-link" href="#base-soil-characterization-3"><span class="header-section-number">11.1</span> Base Soil Characterization</a></li>
+<li><a class="nav-link" href="#filter-material-characterization-2"><span class="header-section-number">11.2</span> Filter Material Characterization</a></li>
+<li><a class="nav-link" href="#permeability-criterion"><span class="header-section-number">11.3</span> Permeability Criterion</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual/blob/main/chapters/11-permeability.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual/edit/main/chapters/11-permeability.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>RMC Filter Evaluation (Continuation) Toolbox Technical Manual</strong>" was written by Adam C. Gohs. It was last built on Last updated: 2025-01-30.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

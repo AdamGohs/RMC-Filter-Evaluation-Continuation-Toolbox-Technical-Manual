@@ -22,6 +22,29 @@
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+          margin-bottom: 0em;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
@@ -55,6 +78,9 @@
 <li><a class="" href="foster-and-fell.html"><span class="header-section-number">8</span> Foster and Fell</a></li>
 <li><a class="" href="summary-plot.html"><span class="header-section-number">9</span> Summary Plot</a></li>
 <li><a class="active" href="constricted-exit.html"><span class="header-section-number">10</span> Constricted Exit</a></li>
+<li><a class="" href="permeability.html"><span class="header-section-number">11</span> Permeability</a></li>
+<li><a class="" href="references.html">References</a></li>
+<li><a class="" href="appendix-a---acronyms.html"><span class="header-section-number">12</span> Appendix A - Acronyms</a></li>
 </ul>
 
         <div class="book-extra">
@@ -104,12 +130,55 @@ Figure 10.3: Step 2 of Constricted Exit worksheet: Plot options.
 </h2>
 <p>Step 3 estimates the probability of continuing erosion (<em>P<sub>CE</sub></em>) using the procedure of Fell and Foster (2023). The <em>JOS</em> that allows continuing erosion of the adjacent base soil (<em>JOS<sub>CE</sub></em>) is between <em>D<sub>95</sub>B</em> and <em>3D<sub>95</sub>B</em>. Sherard et al. (1984) concluded that uniform filters act similar to laboratory sieves with an opening sieve size approximately equal to <em>D<sub>15</sub>F</em> ∕ 9. The <em>D<sub>95</sub>B</em> criterion assumes the Foster and Fell (2001) continuing erosion criterion (see section 8.4) applies to erosion into an open joint, defect, or crack, and the crack width is equivalent to the filter opening size of the voids between the particles in a filter. The <em>3D<sub>95</sub>B</em> criterion is based on the <em>JOS</em> for cement grout to penetrate and flow along the opening of joints in rock.</p>
 <p>The probabilities shown in Table 1 considered these limits. In the table, <em>P<sub>CE</sub></em> is a function the ratio of the <em>JOS</em> to the finest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading (if applicable). If <em>JOS</em> ∕ <em>D<sub>95</sub>B</em> is less than 0.4, zero is displayed. If <em>JOS</em> ∕ <em>D<sub>95</sub>B</em> is greater than or equal to 0.4 and less than 0.5, “&lt;0.0001” is displayed. Intermediate values between 0.5 and 3.0 are interpolated using a z-variate scale for probability and a linear scale for the ratio <em>JOS</em> ∕ <em>D<sub>95</sub>B</em>.</p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="40%">
+<col width="10%">
+<col width="11%">
+<col width="11%">
+<col width="7%">
+<col width="7%">
+<col width="10%">
+</colgroup>
+<thead><tr class="header">
+<th>
+<em>JOS</em> ∕ <em>D<sub>95</sub>B</em>
+</th>
+<th>&lt; 0.4</th>
+<th>0.5</th>
+<th>0.75</th>
+<th>1.0</th>
+<th>2.0</th>
+<th>≥ 3.0</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td><em>P<sub>CE</sub></em></td>
+<td>0</td>
+<td>0.0001</td>
+<td>0.001</td>
+<td>0.1</td>
+<td>0.5</td>
+<td>1.0</td>
+</tr></tbody>
+</table></div>
+<p>According to Fell and Foster (2023), these probabilities apply to erosion into open defects in the foundation and conduits or walls with steady flow conditions. Use higher probabilities for erosion into open defects in conduits or walls with dynamic flow conditions.</p>
+<p>If the coarsest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading is less than or equal to the <em>JOS</em> (coarsest <em>D<sub>95</sub>B</em> ≤ <em>JOS</em>), the proportion of the <em>D<sub>95</sub>B</em> finer than the <em>JOS</em> is 100 percent. If the finest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading is greater than or equal to the <em>JOS</em> (finest <em>D<sub>95</sub>B</em> ≥ <em>JOS</em>), the proportion of the <em>D<sub>95</sub>B</em> finer than the <em>JOS</em> is 0 percent. If the coarsest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading (if applicable) is greater than the <em>JOS</em> and the finest <em>D<sub>95</sub>B</em> after regrading (if applicable) is less than the <em>JOS</em>, the proportion of the <em>D<sub>95</sub>B</em> finer than the <em>JOS</em> is calculated as in the following equation. Figure <a href="constricted-exit.html#fig:figure-37">10.4</a> is an example of step 3.</p>
+<p><span class="math display" id="eq:equation-3">\[\begin{equation}
+    P_{CE} = \frac{log_{10}(JOS) - log_{10}(finest D_{95}B)} {log{10}(coarsest D_{95}B) - log_{10}(finest D_{95}B)}
+    \tag{8.1}
+\end{equation}\]</span></p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-37"></span>
+<img src="images/figure37.png" alt="Step 3 of Constricted Exit worksheet: Probability of continuing erosion." width="100%"><p class="caption">
+Figure 10.4: Step 3 of Constricted Exit worksheet: Probability of continuing erosion.
+</p>
+</div>
 
 </div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="summary-plot.html"><span class="header-section-number">9</span> Summary Plot</a></div>
-<div class="empty"></div>
+<div class="next"><a href="permeability.html"><span class="header-section-number">11</span> Permeability</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">

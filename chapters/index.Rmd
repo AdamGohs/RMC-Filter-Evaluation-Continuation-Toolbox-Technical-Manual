@@ -5,7 +5,7 @@ date: "`r paste('Last updated:', Sys.Date())`"
 site: bookdown::bookdown_site
 output: bookdown::bs4_book
 documentclass: book
-bibliography: [book.bib]
+bibliography: book.bib
 csl: ieee.csl
 link-citations: yes
 github-repo: "AdamGohs/RMC-Filter-Evaluation-Continuation-Technical-Manual"

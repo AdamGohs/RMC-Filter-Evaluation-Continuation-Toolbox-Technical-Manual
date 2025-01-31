@@ -1,0 +1,30 @@
+# Appendix A - Acronyms
+
+| Acronym     | Full Form                                           |
+|-------------|-----------------------------------------------------|
+| BSC         | Base Soil Category                                  |
+| CE          | Continuing Erosion                                  |
+| CEF         | Continuing Erosion Filter                           |
+| CPD         | Computer Program Document                           |
+| EE	        | Excessive Erosion                                   |
+| FC	        | Fines Content                                       |
+| FEMA	      | Federal Emergency Management Agency                 |
+| fm	        | Fine-to-Medium                                      |
+| HEC	        | Hydrologic Engineering Center                       |
+| HW	        | Headwater                                           |
+| IWR	        | Institute for Water Resources                       |
+| JOS	        | Joint Opening Size                                  |
+| NAVD88      | North American Vertical Datum of 1988               |
+| NE	        | No Erosion                                          |
+| NEF	        | No Erosion Filter                                   |
+| NGVD29	    | National Geodetic Vertical Datum of 1929            |
+| NRCS	      | Natural Resource Conservation Center                |
+| QC	        | Quality Control                                     |
+| RMC	        | Risk Management Center                              |
+| SE	        | Some Erosion                                        |
+| UDF	        | User-Defined Function                               |
+| UNSW	      | University of New South Wales                       |
+| U.S.	      | United States                                       |
+| USACE	      | United States Army Corps of Engineers               |
+| USBR	      | United States Bureau of Reclamation                 |
+| USDA	      | United States Department of Agriculture             |
