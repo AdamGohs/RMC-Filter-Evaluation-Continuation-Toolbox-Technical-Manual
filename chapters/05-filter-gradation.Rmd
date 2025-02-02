@@ -14,7 +14,7 @@ The user-specified percent finer (by weight) for the filter material gradation (
 knitr::include_graphics("images/figure9.png")
 ```
 
-Figure \@ref(fig:figure-10) is an example of the summary of the particle-size analysis for the user-specified gradations. The gravel percentage (including coarse and fine gravel percentages), sand percentage (including coarse, medium, and fine sand percentages), fines content (FC) (including estimated silt and clay percentages), coefficient of uniformity (Cu) and coefficient of curvature (Cc) for the coarsest and finest filter material are calculated according to the Unified Soil Classification System (American Society of Testing and Materials [ASTM] D2487). An average percentage is also calculated.
+Figure \@ref(fig:figure-10) is an example of the summary of the particle-size analysis for the user-specified gradations. The gravel percentage (including coarse and fine gravel percentages), sand percentage (including coarse, medium, and fine sand percentages), fines content (FC) (including estimated silt and clay percentages), coefficient of uniformity (Cu) and coefficient of curvature (Cc) for the coarsest and finest filter material are calculated according to the Unified Soil Classification System [@cite-ASTM2487]. An average percentage is also calculated.
 
 The coefficient of uniformity (*C<sub>u</sub>*) is calculated as:
 
@@ -49,7 +49,7 @@ knitr::include_graphics("images/figure10.png")
 
 The filter material may be susceptible to segregation or internal instability. Segregation is the tendency of large particles in a given mass of aggregate to gather together when the material is loaded, transported, or otherwise disturbed.
 
-Segregation can cause pockets of coarse zones that may not be filter-compatible with the material being protected. FEMA (2011) provides filter design guidance to limit segregation potential based on the maximum *D<sub>90</sub>F* and the minimum *D<sub>10</sub>F*. This segregation criteria consider only the design gradation, and the potential for segregation during storing, hauling, dumping, spreading, and compacting must also be considered, which is more subjective and relies on indirect evidence such as construction photographs.
+Segregation can cause pockets of coarse zones that may not be filter-compatible with the material being protected. FEMA [@cite-FEMA2011] provides filter design guidance to limit segregation potential based on the maximum *D<sub>90</sub>F* and the minimum *D<sub>10</sub>F*. This segregation criteria consider only the design gradation, and the potential for segregation during storing, hauling, dumping, spreading, and compacting must also be considered, which is more subjective and relies on indirect evidence such as construction photographs.
 
 Internal instability describes the loss of soil particles because of seepage. Finer particles in the soil can move within the soil mass under the forces imposed on the particles by seepage flow. Gap-graded or broadly graded soils are examples of internally unstable soils. The RMC Internal Instability Toolbox assesses the susceptibility of the filter material to internal instability. Soils which are susceptible to internal instability are also susceptible to segregation.
 

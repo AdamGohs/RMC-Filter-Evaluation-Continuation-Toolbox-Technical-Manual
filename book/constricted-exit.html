@@ -128,7 +128,7 @@ Figure 10.3: Step 2 of Constricted Exit worksheet: Plot options.
 <h2>
 <span class="header-section-number">10.3</span> Likelihood of Continuation<a class="anchor" aria-label="anchor" href="#likelihood-of-continuation"><i class="fas fa-link"></i></a>
 </h2>
-<p>Step 3 estimates the probability of continuing erosion (<em>P<sub>CE</sub></em>) using the procedure of Fell and Foster (2023). The <em>JOS</em> that allows continuing erosion of the adjacent base soil (<em>JOS<sub>CE</sub></em>) is between <em>D<sub>95</sub>B</em> and <em>3D<sub>95</sub>B</em>. Sherard et al. (1984) concluded that uniform filters act similar to laboratory sieves with an opening sieve size approximately equal to <em>D<sub>15</sub>F</em> ∕ 9. The <em>D<sub>95</sub>B</em> criterion assumes the Foster and Fell (2001) continuing erosion criterion (see section 8.4) applies to erosion into an open joint, defect, or crack, and the crack width is equivalent to the filter opening size of the voids between the particles in a filter. The <em>3D<sub>95</sub>B</em> criterion is based on the <em>JOS</em> for cement grout to penetrate and flow along the opening of joints in rock.</p>
+<p>Step 3 estimates the probability of continuing erosion (<em>P<sub>CE</sub></em>) using the procedure of Fell and Foster (2023). The <em>JOS</em> that allows continuing erosion of the adjacent base soil (<em>JOS<sub>CE</sub></em>) is between <em>D<sub>95</sub>B</em> and <em>3D<sub>95</sub>B</em>. Sherard et al. (1984) concluded that uniform filters act similar to laboratory sieves with an opening sieve size approximately equal to <em>D<sub>15</sub>F</em> ∕ 9. The <em>D<sub>95</sub>B</em> criterion assumes the Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span> continuing erosion criterion (see section 8.4) applies to erosion into an open joint, defect, or crack, and the crack width is equivalent to the filter opening size of the voids between the particles in a filter. The <em>3D<sub>95</sub>B</em> criterion is based on the <em>JOS</em> for cement grout to penetrate and flow along the opening of joints in rock.</p>
 <p>The probabilities shown in Table 1 considered these limits. In the table, <em>P<sub>CE</sub></em> is a function the ratio of the <em>JOS</em> to the finest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading (if applicable). If <em>JOS</em> ∕ <em>D<sub>95</sub>B</em> is less than 0.4, zero is displayed. If <em>JOS</em> ∕ <em>D<sub>95</sub>B</em> is greater than or equal to 0.4 and less than 0.5, “&lt;0.0001” is displayed. Intermediate values between 0.5 and 3.0 are interpolated using a z-variate scale for probability and a linear scale for the ratio <em>JOS</em> ∕ <em>D<sub>95</sub>B</em>.</p>
 <div class="inline-table"><table class="table table-sm">
 <colgroup>
@@ -161,7 +161,7 @@ Figure 10.3: Step 2 of Constricted Exit worksheet: Plot options.
 <td>1.0</td>
 </tr></tbody>
 </table></div>
-<p>According to Fell and Foster (2023), these probabilities apply to erosion into open defects in the foundation and conduits or walls with steady flow conditions. Use higher probabilities for erosion into open defects in conduits or walls with dynamic flow conditions.</p>
+<p>According to Fell and Foster <span class="citation"><a href="#ref-cite-Toolbox2024">[8]</a></span>, these probabilities apply to erosion into open defects in the foundation and conduits or walls with steady flow conditions. Use higher probabilities for erosion into open defects in conduits or walls with dynamic flow conditions.</p>
 <p>If the coarsest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading is less than or equal to the <em>JOS</em> (coarsest <em>D<sub>95</sub>B</em> ≤ <em>JOS</em>), the proportion of the <em>D<sub>95</sub>B</em> finer than the <em>JOS</em> is 100 percent. If the finest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading is greater than or equal to the <em>JOS</em> (finest <em>D<sub>95</sub>B</em> ≥ <em>JOS</em>), the proportion of the <em>D<sub>95</sub>B</em> finer than the <em>JOS</em> is 0 percent. If the coarsest <em>D<sub>95</sub>B</em> of the adjacent base soil after regrading (if applicable) is greater than the <em>JOS</em> and the finest <em>D<sub>95</sub>B</em> after regrading (if applicable) is less than the <em>JOS</em>, the proportion of the <em>D<sub>95</sub>B</em> finer than the <em>JOS</em> is calculated as in the following equation. Figure <a href="constricted-exit.html#fig:figure-37">10.4</a> is an example of step 3.</p>
 <p><span class="math display" id="eq:equation-3">\[\begin{equation}
     P_{CE} = \frac{log_{10}(JOS) - log_{10}(finest D_{95}B)} {log{10}(coarsest D_{95}B) - log_{10}(finest D_{95}B)}
@@ -174,6 +174,17 @@ Figure 10.4: Step 3 of Constricted Exit worksheet: Probability of continuing ero
 </p>
 </div>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body" entry-spacing="0">
+<div id="ref-cite-FosterandFell2001" class="csl-entry">
+<div class="csl-left-margin">[4] </div>
+<div class="csl-right-inline">R. Fell and M. A. Foster, <span>“Assessing embankment dam filters that do not satisfy design criteria.”</span> Journal of Geotechnical; Geoenvironmental Engineering, 2001. doi: <a href="https://doi.org/10.1061/(ASCE)1090-0241(2001)127:5(398)">https://doi.org/10.1061/(ASCE)1090-0241(2001)127:5(398)</a>.</div>
+</div>
+<div id="ref-cite-Toolbox2024" class="csl-entry">
+<div class="csl-left-margin">[8] </div>
+<div class="csl-right-inline">R. Fell and M. A. Foster, <span>“Update of the unified method for estimating probablities of failure by internal erosion and piping,”</span> University of New South Wales, UNICIV Report No. R-470, 2024.</div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -203,7 +214,7 @@ Figure 10.4: Step 3 of Constricted Exit worksheet: Probability of continuing ero
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>RMC Filter Evaluation (Continuation) Toolbox Technical Manual</strong>" was written by Adam C. Gohs. It was last built on Last updated: 2025-01-30.</p>
+    <p>"<strong>RMC Filter Evaluation (Continuation) Toolbox Technical Manual</strong>" was written by Adam C. Gohs. It was last built on Last updated: 2025-02-01.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
