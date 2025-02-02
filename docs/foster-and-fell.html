@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>8 Foster and Fell | RMC Filter Evaluation (Continuation) Toolbox Technical Manual</title>
+<meta name="author" content="Adam C. Gohs">
+<meta name="description" content="Many existing embankment dams have filter or transition zones coarser than required by modern filter design criteria. Foster and Fell [4] indicated that filter materials could be coarser than...">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
+<meta property="og:title" content="8 Foster and Fell | RMC Filter Evaluation (Continuation) Toolbox Technical Manual">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://www.rmc.usace.army.mil/foster-and-fell.html">
+<meta property="og:description" content="Many existing embankment dams have filter or transition zones coarser than required by modern filter design criteria. Foster and Fell [4] indicated that filter materials could be coarser than...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="8 Foster and Fell | RMC Filter Evaluation (Continuation) Toolbox Technical Manual">
+<meta name="twitter:description" content="Many existing embankment dams have filter or transition zones coarser than required by modern filter design criteria. Foster and Fell [4] indicated that filter materials could be coarser than...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.8.0/transition.js"></script><script src="libs/bs3compat-0.8.0/tabs.js"></script><script src="libs/bs3compat-0.8.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+          margin-bottom: 0em;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">RMC Filter Evaluation (Continuation) Toolbox Technical Manual</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Preface</a></li>
+<li><a class="" href="introduction.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="terms-and-conditions-for-use.html"><span class="header-section-number">2</span> Terms and Conditions for Use</a></li>
+<li><a class="" href="general-overview.html"><span class="header-section-number">3</span> General Overview</a></li>
+<li><a class="" href="background.html"><span class="header-section-number">4</span> Background</a></li>
+<li><a class="" href="filter-gradation.html"><span class="header-section-number">5</span> Filter Gradation</a></li>
+<li><a class="" href="base-gradation.html"><span class="header-section-number">6</span> Base Gradation</a></li>
+<li><a class="" href="design-for-particle-retention.html"><span class="header-section-number">7</span> Design for Particle Retention</a></li>
+<li><a class="active" href="foster-and-fell.html"><span class="header-section-number">8</span> Foster and Fell</a></li>
+<li><a class="" href="summary-plot.html"><span class="header-section-number">9</span> Summary Plot</a></li>
+<li><a class="" href="constricted-exit.html"><span class="header-section-number">10</span> Constricted Exit</a></li>
+<li><a class="" href="permeability.html"><span class="header-section-number">11</span> Permeability</a></li>
+<li><a class="" href="references.html">References</a></li>
+<li><a class="" href="appendix-a---acronyms.html"><span class="header-section-number">12</span> Appendix A - Acronyms</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="foster-and-fell" class="section level1" number="8">
+<h1>
+<span class="header-section-number">8</span> Foster and Fell<a class="anchor" aria-label="anchor" href="#foster-and-fell"><i class="fas fa-link"></i></a>
+</h1>
+<p>Many existing embankment dams have filter or transition zones coarser than required by modern filter design criteria. Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span> indicated that filter materials could be coarser than those resulting from the no-erosion particle retention criterion but still prevent continuous erosion of the base material. For risk assessments of existing embankment dams, it is necessary to evaluate the likelihood of continuation of erosion when such filters are present.</p>
+<p>Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span> developed the continuing erosion filter (CEF) test by modifying the NEF test to evaluate filter performance in terms of how much erosion is required to seal the filter material. The concept of erosion boundaries was developed to describe the filter behavior.</p>
+<ul>
+<li><p>No-erosion (NE) condition occurs when the filter material seals with no erosion or very little erosion of the base material. The increase in leakage flows is so small that it is likely undetectable. Filters designed and constructed according to modern filter design criteria satisfy the NE condition as described in section 7.</p></li>
+<li><p>Some erosion (SE) condition occurs when “some” erosion of the base soil occurs, but the filter quickly seals after particles of the base material clog the surface of the filter.</p></li>
+<li><p>Excessive erosion (EE) condition occurs when “excessive” erosion of the base soil occurs, allowing large increases in leakage flow before the filter seals. The extent of erosion is sufficient to damage the embankment.</p></li>
+<li><p>Continuing erosion (CE) occurs when the filter is too coarse to allow the eroded base materials to seal the filter, allowing unrestricted or continuous erosion of the base soil and leakage flows.</p></li>
+</ul>
+<p>Figure <a href="foster-and-fell.html#fig:figure-23">8.1</a> conceptually shows these erosion boundaries from CEF test behavior.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-23"></span>
+<img src="images/figure23.png" alt="Conceptual erosion boundaries of continuing erosion filter test behavior (adapted from Foster and Fell 2001)." width="100%"><p class="caption">
+Figure 8.1: Conceptual erosion boundaries of continuing erosion filter test behavior (adapted from Foster and Fell 2001).
+</p>
+</div>
+<p>Applying these methods correctly requires understanding the context from which each method was developed, as laboratory test conditions may vary from field conditions. The filter evaluation relies heavily on the research of Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span> to determine NE, SE, EE, and CE boundaries for the base soil. These erosion conditions were derived from CEF tests, which consisted of a vertically downward flow regime using very high water pressures (i.e., full tap pressure of 300 kPa) and a preformed hole. Therefore, the results are likely conservative.</p>
+<div id="base-soil-characterization-1" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> Base Soil Characterization<a class="anchor" aria-label="anchor" href="#base-soil-characterization-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 1 characterizes the base soil after regrading (if applicable). Due to the large variability of base soil gradations that may be encountered in practice, gradation test data may include statistical results that are not representative of in situ conditions. FEMA <span class="citation"><a href="#ref-cite-FEMA2011">[1]</a></span> discusses selecting the representative base soil gradation, and the RMC Soil Classification Toolbox can be used to plot all base soil gradations to help the evaluation. While the range or envelope of base soil gradations are input on the Base Gradation worksheet, use the drop-down list to specify the percentage (<em>N</em>) of those gradations considered representative of the base soil gradation for subsequent calculations.</p>
+<p>For each input sieve size, the range or envelope of the corresponding percent finer is proportioned to obtain the finer (100% − <em>N</em>) ∕ 2 of the base soil gradations and the coarser (100% − <em>N</em>) ∕ 2 of the base soil gradations. The average gradation is also obtained for each input sieve size for the range or envelope of the corresponding percent finer. Alternatively, input the representative base soil gradation directly on the Base Gradation worksheet and use a value of 100 percent for <em>N</em>, so no further adjustment is made. Fell et al. <span class="citation"><a href="#ref-cite-Toolbox2008">[7]</a></span> recommended selecting representative gradations of the regraded base soil (if applicable), which are indicative of the finer 5 percent of base soil gradations, average gradation, and coarser 5 percent of base soil gradations (i.e., the representative base soil gradation represents <em>N</em> = 90 percent of all gradation tests). Selecting the representative base soil gradation is illustrated in Figure <a href="foster-and-fell.html#fig:figure-24">8.2</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-24"></span>
+<img src="images/figure24.png" alt="Example of representative gradation curves." width="100%"><p class="caption">
+Figure 8.2: Example of representative gradation curves.
+</p>
+</div>
+<p>The <em>D<sub>95</sub>B</em>, <em>D<sub>90</sub>B</em>, <em>D<sub>85</sub>B</em>, <em>FC</em>, and fine-to-medium sand content (<em>fm</em>) of the representative base soil gradation are interpolated using a logarithmic scale for particle size and linear scale for percent passing. For the Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span> method, the fine-to-medium sand content of the base soil is defined as the percentage between 1.18 mm and 0.075 mm, whereas ASTM D2487 <span class="citation"><a href="#ref-cite-ASTM2487">[2]</a></span> defines fine-to-medium sand as the percentage of soil particles between 2.00 mm and 0.075 mm. Use the drop-down list to select whether the base soil is non-dispersive or dispersive. Figure <a href="foster-and-fell.html#fig:figure-25">8.3</a> is an example of step 1.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-25"></span>
+<img src="images/figure25.png" alt="Step 1 of Foster and Fell worksheet: Base soil characterization." width="100%"><p class="caption">
+Figure 8.3: Step 1 of Foster and Fell worksheet: Base soil characterization.
+</p>
+</div>
+</div>
+<div id="filter-material-characterization-1" class="section level2" number="8.2">
+<h2>
+<span class="header-section-number">8.2</span> Filter Material Characterization<a class="anchor" aria-label="anchor" href="#filter-material-characterization-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 2 characterizes the filter material. The range of <em>D<sub>95</sub>B</em> is obtained from the Filter Gradation worksheet, where it is interpolated using a logarithmic scale for particle size and linear scale for percent passing. Figure <a href="foster-and-fell.html#fig:figure-26">8.4</a> is an example of step 2.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-26"></span>
+<img src="images/figure26.png" alt="Step 2 of Foster and Fell worksheet: Filter material characterization." width="100%"><p class="caption">
+Figure 8.4: Step 2 of Foster and Fell worksheet: Filter material characterization.
+</p>
+</div>
+</div>
+<div id="no-erosion-boundary" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> No-Erosion Boundary<a class="anchor" aria-label="anchor" href="#no-erosion-boundary"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 3 evaluates the no-erosion boundary [<em>(D<sub>15</sub>F)<sub>NE</sub></em>] for the representative base soil gradations after regrading (if applicable), based on the BSC and whether the base soil is non-dispersive or dispersive. The criteria are the same as the no-erosion criteria on the Particle Retention worksheet and are a function of <em>D<sub>85</sub>B</em> and <em>FC</em> as shown in Figure <a href="foster-and-fell.html#fig:figure-27">8.5</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-27"></span>
+<img src="images/figure27.png" alt="Step 3 of Foster and Fell worksheet: No-erosion boundary." width="100%"><p class="caption">
+Figure 8.5: Step 3 of Foster and Fell worksheet: No-erosion boundary.
+</p>
+</div>
+</div>
+<div id="continuing-erosion-boundary" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> Continuing Erosion Boundary<a class="anchor" aria-label="anchor" href="#continuing-erosion-boundary"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 4 evaluates the continuing erosion boundary [<em>(D<sub>15</sub>F)<sub>CE</sub></em>] from Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span> for the representative base soil gradations after regrading (if applicable), based on <em>D<sub>95</sub>B</em> using the criterion shown in Figure <a href="foster-and-fell.html#fig:figure-28">8.6</a>. If a continuing erosion condition is met for the representative base soil gradation, the other erosion boundary is not assessed.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-28"></span>
+<img src="images/figure28.png" alt="Step 4 of Foster and Fell worksheet: Continuing erosion boundary." width="100%"><p class="caption">
+Figure 8.6: Step 4 of Foster and Fell worksheet: Continuing erosion boundary.
+</p>
+</div>
+</div>
+<div id="excessive-erosion-boundary" class="section level2" number="8.5">
+<h2>
+<span class="header-section-number">8.5</span> Excessive Erosion Boundary<a class="anchor" aria-label="anchor" href="#excessive-erosion-boundary"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 5 evaluates the excessive erosion boundary [<em>(D<sub>15</sub>F)<sub>EE</sub></em>] from Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span> for the representative base soil gradations after regrading (if applicable), based on <em>D<sub>95</sub>B</em>, <em>D<sub>90</sub>B</em>, <em>D<sub>85</sub>B</em>, <em>FC</em>, and <em>fm</em> and whether the base soil is non-dispersive or dispersive, using the criteria shown in Figure <a href="foster-and-fell.html#fig:figure-29">8.7</a>. The criterion for <em>D<sub>95</sub>B</em> greater than 2 mm and <em>FC</em> greater than 35 percent was obtained by a curve fit to the 0.25-g/cm2 contour of erosion loss from CEF tests from Foster and Fell <span class="citation"><a href="#ref-cite-FosterandFell2001">[4]</a></span>, as recommended by Fell et al. <span class="citation"><a href="#ref-cite-Toolbox2008">[7]</a></span> (see Figure <a href="foster-and-fell.html#fig:figure-30">8.8</a>).</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-29"></span>
+<img src="images/figure29.png" alt="Excessive erosion boundary (adapted from Fell et al. 2008)." width="100%"><p class="caption">
+Figure 8.7: Excessive erosion boundary (adapted from Fell et al. 2008).
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-30"></span>
+<img src="images/figure30.png" alt="Step 4 of Foster and Fell worksheet: Excessive erosion boundary." width="100%"><p class="caption">
+Figure 8.8: Step 4 of Foster and Fell worksheet: Excessive erosion boundary.
+</p>
+</div>
+</div>
+<div id="likelihood-of-erosion" class="section level2" number="8.6">
+<h2>
+<span class="header-section-number">8.6</span> Likelihood of Erosion<a class="anchor" aria-label="anchor" href="#likelihood-of-erosion"><i class="fas fa-link"></i></a>
+</h2>
+<p>Step 6 compares the erosion boundaries for the representative base soil gradation after regrading (if applicable) against the range of <em>D<sub>15</sub>F</em> (example provided in Figure <a href="foster-and-fell.html#fig:figure-31">8.9</a>). The ranges of the erosion boundaries for the coarse base soil gradation, average base soil gradation, and fine base soil gradation display as green, blue, and red horizontal lines, respectively. The range for the CE and NE categories extends infinitely beyond their respective boundaries. The erosion boundaries for each representative base soil gradation display as short vertical lines of the same color as the horizontal lines, and the erosion categories are labeled between the boundaries. The range of <em>D<sub>15</sub>F</em> displays as vertical black lines that intersect these erosion categories.</p>
+<p>The proportions of the filter material gradation that fall into the CE, EE, and SE categories are calculated for each of the representative base soil gradations after regrading (if applicable) and are summarized in a table. It is possible for the EE boundary to be the same as the CE boundary. For those scenarios, there is no proportion for EE, and only SE displays. The sum of the proportions must be 100 percent. Fell et al. <span class="citation"><a href="#ref-cite-Toolbox2008">[7]</a></span> recommended estimating the proportions for CE, EE, and SE and then calculating the proportion of the filter material gradation finer than the NE category as in the following equations.</p>
+<p><span class="math display" id="eq:equation-3">\[\begin{equation}
+    {P_NE,coarse} = 1 - {P_CE,coarse} - {P_EE,coarse} - {P_SE,coarse}
+    \tag{8.1}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:equation-4">\[\begin{equation}
+    {P_NE,average} = 1 - {P_CE,average} - {P_EE,average} - {P_SE,average}
+    \tag{8.2}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:equation-5">\[\begin{equation}
+    {P_NE,fine} = 1 - {P_CE,fine} - {P_EE,fine} - {P_SE,fine}
+    \tag{8.3}
+\end{equation}\]</span></p>
+<p>where:</p>
+<blockquote>
+<p><em>P,<sub>NE</sub></em> = proportion of the filter material gradation finer than the NE category<br><em>P,<sub>SE</sub></em> = proportion of the filter material gradation within the SE category<br><em>P,<sub>EE</sub></em> = proportion of the filter material gradation within the EE category<br><em>P,<sub>CE</sub></em> = proportion of the filter material gradation coarser than the NE category</p>
+</blockquote>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-31"></span>
+<img src="images/figure31.png" alt="Step 6 of Foster and Fell worksheet: Erosion boundaries for representative base soil gradation." width="100%"><p class="caption">
+Figure 8.9: Step 6 of Foster and Fell worksheet: Erosion boundaries for representative base soil gradation.
+</p>
+</div>
+<p><strong><em>This section of the technical manual formerly contained instructions for using the guidance in Fell et al. <span class="citation"><a href="#ref-cite-Toolbox2008">[7]</a></span> to estimate the probability of continuing erosion for gradations finer than the continuing erosion boundary. The Risk Management Center no longer suggests that this approach be used in risk analyses.</em></strong></p>
+<p>The probabilities of NE, SE, EE, and CE are estimated by weighting the proportions of NE, SE, EE, and CE for each representative base soil gradation by the percentage of the representative base soil gradation (i.e., the sum of the products of the percentage of each representative base soil gradation and the proportions of NE, SE, EE, and CE for each representative base soil gradation) as shown in Figure <a href="foster-and-fell.html#fig:figure-32">8.10</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:figure-32"></span>
+<img src="images/figure32.png" alt="Step 6 of Foster and Fell worksheet: Probability of each erosion condition." width="100%"><p class="caption">
+Figure 8.10: Step 6 of Foster and Fell worksheet: Probability of each erosion condition.
+</p>
+</div>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body" entry-spacing="0">
+<div id="ref-cite-FEMA2011" class="csl-entry">
+<div class="csl-left-margin">[1] </div>
+<div class="csl-right-inline">
+<em>Filters for embankment dams: Best practices for design and construction</em>. Washington, D.C.: Federal Emergency Management Agency, 2011. Available: <a href="https://www.fema.gov/sites/default/files/2020-08/filters_embankment_dams_update.pdf">https://www.fema.gov/sites/default/files/2020-08/filters_embankment_dams_update.pdf</a>
+</div>
+</div>
+<div id="ref-cite-ASTM2487" class="csl-entry">
+<div class="csl-left-margin">[2] </div>
+<div class="csl-right-inline">
+<em>Standard practice for classification of soils for engineering purposes (unified soil classification system)</em>. West Conshohocken, PA: American Society for Testing; Materials International, 2017. doi: <a href="https://doi.org/10.1520/D2487-17">https://doi.org/10.1520/D2487-17</a>.</div>
+</div>
+<div id="ref-cite-FosterandFell2001" class="csl-entry">
+<div class="csl-left-margin">[4] </div>
+<div class="csl-right-inline">R. Fell and M. A. Foster, <span>“Assessing embankment dam filters that do not satisfy design criteria.”</span> Journal of Geotechnical; Geoenvironmental Engineering, 2001. doi: <a href="https://doi.org/10.1061/(ASCE)1090-0241(2001)127:5(398)">https://doi.org/10.1061/(ASCE)1090-0241(2001)127:5(398)</a>.</div>
+</div>
+<div id="ref-cite-Toolbox2008" class="csl-entry">
+<div class="csl-left-margin">[7] </div>
+<div class="csl-right-inline">F. Fell Robin and R. R. Davidson, <span>“Risk analysis for dam safety: A unified method for estimating probabilities of failure of embankment dams by internal erosion and piping guidance document,”</span> University of New South Wales, UNICIV Report No. R-446, 2008. Available: <a href="http://vm.civeng.unsw.edu.au/uniciv/R-446.pdf">http://vm.civeng.unsw.edu.au/uniciv/R-446.pdf</a>
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="design-for-particle-retention.html"><span class="header-section-number">7</span> Design for Particle Retention</a></div>
+<div class="next"><a href="summary-plot.html"><span class="header-section-number">9</span> Summary Plot</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#foster-and-fell"><span class="header-section-number">8</span> Foster and Fell</a></li>
+<li><a class="nav-link" href="#base-soil-characterization-1"><span class="header-section-number">8.1</span> Base Soil Characterization</a></li>
+<li><a class="nav-link" href="#filter-material-characterization-1"><span class="header-section-number">8.2</span> Filter Material Characterization</a></li>
+<li><a class="nav-link" href="#no-erosion-boundary"><span class="header-section-number">8.3</span> No-Erosion Boundary</a></li>
+<li><a class="nav-link" href="#continuing-erosion-boundary"><span class="header-section-number">8.4</span> Continuing Erosion Boundary</a></li>
+<li><a class="nav-link" href="#excessive-erosion-boundary"><span class="header-section-number">8.5</span> Excessive Erosion Boundary</a></li>
+<li><a class="nav-link" href="#likelihood-of-erosion"><span class="header-section-number">8.6</span> Likelihood of Erosion</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual/blob/main/chapters/08-foster-and-fell.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/AdamGohs/RMC-Filter-Evaluation-Continuation-Toolbox-Technical-Manual/edit/main/chapters/08-foster-and-fell.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>RMC Filter Evaluation (Continuation) Toolbox Technical Manual</strong>" was written by Adam C. Gohs. It was last built on Last updated: 2025-02-01.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
