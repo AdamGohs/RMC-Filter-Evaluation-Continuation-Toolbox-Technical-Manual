@@ -39,9 +39,12 @@ fig:figure-33
 fig:figure-34
 fig:figure-35
 fig:figure-36
+tab:table-1
+eq:equation-6
 fig:figure-37
 fig:figure-38
 fig:figure-39
+eq:equation-7
 fig:figure-40
 fig:figure-41
 introduction

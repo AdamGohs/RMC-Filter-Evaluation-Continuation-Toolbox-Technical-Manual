@@ -26,14 +26,36 @@ knitr::include_graphics("images/figure36.png")
 
 ## Likelihood of Continuation
 
-Step 3 estimates the probability of continuing erosion (*P<sub>CE</sub>*) using the procedure of Fell and Foster (2023). The *JOS* that allows continuing erosion of the adjacent base soil (*JOS<sub>CE</sub>*) is between *D<sub>95</sub>B* and *3D<sub>95</sub>B*. Sherard et al. (1984) concluded that uniform filters act similar to laboratory sieves with an opening sieve size approximately equal to *D<sub>15</sub>F* ∕ 9. The *D<sub>95</sub>B* criterion assumes the Foster and Fell [@cite-FosterandFell2001] continuing erosion criterion (see section 8.4) applies to erosion into an open joint, defect, or crack, and the crack width is equivalent to the filter opening size of the voids between the particles in a filter. The *3D<sub>95</sub>B* criterion is based on the *JOS* for cement grout to penetrate and flow along the opening of joints in rock.
+Step 3 estimates the probability of continuing erosion (*P<sub>CE</sub>*) using the procedure of Fell and Foster [@cite-Toolbox2024]. The *JOS* that allows continuing erosion of the adjacent base soil (*JOS<sub>CE</sub>*) is between *D<sub>95</sub>B* and *3D<sub>95</sub>B*. Sherard et al. [@cite-Sherard1984] concluded that uniform filters act similar to laboratory sieves with an opening sieve size approximately equal to *D<sub>15</sub>F* ∕ 9. The *D<sub>95</sub>B* criterion assumes the Foster and Fell [@cite-FosterandFell2001] continuing erosion criterion (see section 8.4) applies to erosion into an open joint, defect, or crack, and the crack width is equivalent to the filter opening size of the voids between the particles in a filter. The *3D<sub>95</sub>B* criterion is based on the *JOS* for cement grout to penetrate and flow along the opening of joints in rock.
 
-The probabilities shown in Table 1 considered these limits. In the table, *P<sub>CE</sub>* is a function the ratio of the *JOS* to the finest *D<sub>95</sub>B* of the adjacent base soil after regrading (if applicable). If *JOS* ∕ *D<sub>95</sub>B* is less than 0.4, zero is displayed. If *JOS* ∕ *D<sub>95</sub>B* is greater than or equal to 0.4 and less than 0.5, “<0.0001” is displayed. Intermediate values between 0.5 and 3.0 are interpolated using a z-variate scale for probability and a linear scale for the ratio *JOS* ∕ *D<sub>95</sub>B*.
+The probabilities shown in Table \@ref(tab:table-1) considered these limits. In the table, *P<sub>CE</sub>* is a function the ratio of the *JOS* to the finest *D<sub>95</sub>B* of the adjacent base soil after regrading (if applicable). If *JOS* ∕ *D<sub>95</sub>B* is less than 0.4, zero is displayed. If *JOS* ∕ *D<sub>95</sub>B* is greater than or equal to 0.4 and less than 0.5, “<0.0001” is displayed. Intermediate values between 0.5 and 3.0 are interpolated using a z-variate scale for probability and a linear scale for the ratio *JOS* ∕ *D<sub>95</sub>B*.
 
-| *JOS* ∕ *D<sub>95</sub>B* | < 0.4 |   0.5  |  0.75  | 1.0 | 2.0 | ≥ 3.0 |
-|---------------------------|-------|--------|--------|-----|-----|-------|
-      *P<sub>CE</sub>*      |   0   | 0.0001 |  0.001 | 0.1 | 0.5 |  1.0  |
+```{r table-1, tidy=FALSE, echo=FALSE}
+library(knitr)
+library(kableExtra)
 
+# Create the table with two rows and categories in the first column
+kable(
+  data.frame(
+    "Column1" = c("JOS / D<sub>95</sub>B", "P<sub>CE</sub>"),
+    "Column2" = c("< 0.4", "0"),
+    "Column3" = c("0.5", "0.0001"),
+    "Column4" = c("0.75", "0.001"),
+    "Column5" = c("1.0", "0.1"),
+    "Column6" = c("2.0", "0.5"),
+    "Column7" = c("≥ 3.0", "0.9")
+  ),
+  format = "html",
+  booktabs = TRUE,
+  escape = FALSE,
+  col.names = NULL,  # No column names
+  align = c("c"),
+  caption = "Probability of continuing erosion for joint/defect opening size [@cite-Toolbox2024]"
+) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 16) %>%  # Style the table
+  column_spec(1, bold = TRUE, border_right = "1px solid #D3D3D3", width = "7em") %>%  # Style the first column
+  column_spec(2:7, width = "5em")  # Set the width for columns 2 to 7
+```
 
 According to Fell and Foster [@cite-Toolbox2024], these probabilities apply to erosion into open defects in the foundation and conduits or walls with steady flow conditions. Use higher probabilities for erosion into open defects in conduits or walls with dynamic flow conditions.
 
@@ -41,7 +63,7 @@ If the coarsest *D<sub>95</sub>B* of the adjacent base soil after regrading is l
 
 \begin{equation}
     P_{CE} = \frac{log_{10}(JOS) - log_{10}(finest D_{95}B)} {log{10}(coarsest D_{95}B) - log_{10}(finest D_{95}B)}
-    (\#eq:equation-3)
+    (\#eq:equation-6)
 \end{equation}
 
 ```{r figure-37, echo=FALSE, fig.align="center", fig.cap="Step 3 of Constricted Exit worksheet: Probability of continuing erosion.", out.width="100%"}

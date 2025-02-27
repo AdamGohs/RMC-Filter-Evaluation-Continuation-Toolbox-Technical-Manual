@@ -4,7 +4,7 @@ This worksheet assesses whether the filter material meets the drainage criterion
 
 ## Base Soil Characterization
 
-Step 1 characterizes the base soil. FEMA (2011) indicates the coarsest *D<sub>15</sub>B* before regrading is used to evaluate permeability requirements. Step 1 obtains the coarsest *D<sub>15</sub>B* before regrading from the Base Gradation worksheet, where it is interpolated using a logarithmic scale for particle size and linear scale for percent passing. Figure \@ref(fig:figure-38) is an example of step 1.
+Step 1 characterizes the base soil. FEMA [@cite-FEMA2011] indicates the coarsest *D<sub>15</sub>B* before regrading is used to evaluate permeability requirements. Step 1 obtains the coarsest *D<sub>15</sub>B* before regrading from the Base Gradation worksheet, where it is interpolated using a logarithmic scale for particle size and linear scale for percent passing. Figure \@ref(fig:figure-38) is an example of step 1.
 
 ```{r figure-38, echo=FALSE, fig.align="center", fig.cap="Step 1 of Permeability worksheet: Base soil characterization.", out.width="100%"}
 knitr::include_graphics("images/figure38.png")
@@ -23,8 +23,8 @@ knitr::include_graphics("images/figure39.png")
 The criterion for permeability is that the filter material has a minimum *D<sub>15</sub>F* that is an integer multiplier of the coarsest *D<sub>15</sub>B* before regrading but not less than 0.1 mm. USACE Engineer Manual (EM) 1110-2-1901 [@cite-EM1901] requires a multiplier of 3 to 5. However, USBR [@cite-DS13] and National Resources Conservation Service (NRCS) [@cite-NEH633] require a multiplier of 5, which is considered the primary criterion on this worksheet. The minimum *D<sub>15</sub>F* of the filter material is calculated as in the following equation.
 
 \begin{equation}
-    D_{15}F = 5D_{15}B \text{ but not less than 0.1 mm} 
-    (\#eq:equation-4)
+    D_{15}F = 5(D_{15}B) \text{ but not less than 0.1 mm} 
+    (\#eq:equation-7)
 \end{equation}
 
 where:

@@ -4,7 +4,7 @@ Modern filter design criteria for particle retention are based on providing a no
 
 ## Base Soil Characterization
 
-Step 1 characterizes the base soil. The fines content (FC), or percent passing the No. 200 sieve size by weight, of the finest base soil after regrading (if applicable) is obtained from the Base Gradation worksheet, where it is interpolated using a logarithmic scale for particle size and linear scale for percent passing. The base soil category (BSC) is assigned based on the FC of the finest base soil after regrading (if applicable). Use the drop-down list to select whether the base soil is non-dispersive or dispersive. Figure \@ref(fig:figure-19) is an example of step 1.
+Step 1 characterizes the base soil. The fines content (*FC*), or percent passing the No. 200 sieve size by weight, of the finest base soil after regrading (if applicable) is obtained from the Base Gradation worksheet, where it is interpolated using a logarithmic scale for particle size and linear scale for percent passing. The base soil category (BSC) is assigned based on the *FC* of the finest base soil after regrading (if applicable). Use the drop-down list to select whether the base soil is non-dispersive or dispersive. Figure \@ref(fig:figure-19) is an example of step 1.
 
 ```{r figure-19, echo=FALSE, fig.align="center", fig.cap="Step 1 of Particle Retention worksheet: Base soil characterization.", out.width="100%"}
 knitr::include_graphics("images/figure19.png")
@@ -20,7 +20,7 @@ knitr::include_graphics("images/figure20.png")
 
 ## Particle Retention Criterion
 
-Sherard et al. [@cite-Sherard1984] and Foster and Fell [@cite-FosterandFell2001] show that the measurable property of the filter that best defines its particle retention capability is the *D<sub>15</sub>* of the filter (*D<sub>15</sub>F*). Research also shows that the correlation between *D<sub>15</sub>F* and the *d<sub>85</sub>* of the base soil being protected by the filter (*D<sub>85</sub>B*) provides the best correlation for successful particle retention.
+Foster and Fell [@cite-FosterandFell2001] and Sherard et al. [@cite-Sherard1984] show that the measurable property of the filter that best defines its particle retention capability is the *D<sub>15</sub>* of the filter (*D<sub>15</sub>F*). Research also shows that the correlation between *D<sub>15</sub>F* and the *d<sub>85</sub>* of the base soil being protected by the filter (*D<sub>85</sub>B*) provides the best correlation for successful particle retention.
 
 Sherard and Dunnigan [@cite-Sherard1985] developed the No-Erosion Filter (NEF) test to find the ratio of *D<sub>15</sub>F* and *D<sub>85</sub>B* that establishes a no-erosion condition for non-dispersive base soils. Additional research by Foster and Fell [@cite-FosterandFell2001] at the University of New South Wales (UNSW) helped in developing the no erosion condition for dispersive base soils. The results of the NEF and UNSW tests were used to develop the modern filter design criteria for particle retention in FEMA [@cite-FEMA2011].
 
