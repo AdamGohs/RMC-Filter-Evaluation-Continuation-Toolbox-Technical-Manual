@@ -70,7 +70,7 @@ knitr::include_graphics("images/figure6.png")
 knitr::include_graphics("images/figure7.png")
 ```
 
-Some calculation worksheets can perform either a deterministic or probabilistic analysis. Although not required to perform a probabilistic analysis, Palisade @RISK software (standalone version or as part of the Palisade DecisionTools Suite) can customize the probabilistic analysis. A note appears in a bold red font at the upper right-hand margin of a calculation worksheet indicating if this feature is included with the toolbox.
+Some calculation worksheets can perform either a deterministic or probabilistic analysis. Although not required to perform a probabilistic analysis, Palisade `@RISK` software (standalone version or as part of the Palisade DecisionTools Suite) can customize the probabilistic analysis. A note appears in a bold red font at the upper right-hand margin of a calculation worksheet indicating if this feature is included with the toolbox.
 
 User notes generally appear in the right margin of each calculation worksheet. Some notes are in blue or red font for heightened awareness. These notes include references to source materials for equations, figures, tables, pages, etc. If the RMC modified the source material, the reference citation says “adapted from” instead of “from.”
 
