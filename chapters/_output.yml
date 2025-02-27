@@ -8,7 +8,7 @@ bookdown::bs4_book:
     branch: main
     subdir: chapters
   includes:
-    in_header:
+    in_header: "google_analytics.html"
 bookdown::gitbook:
   css: style.css
   split_by: section
