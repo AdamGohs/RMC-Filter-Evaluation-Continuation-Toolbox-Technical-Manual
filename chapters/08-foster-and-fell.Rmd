@@ -14,7 +14,7 @@ Foster and Fell [@cite-FosterandFell2001] developed the continuing erosion filte
 
 Figure \@ref(fig:figure-23) conceptually shows these erosion boundaries from CEF test behavior.
 
-```{r figure-23, echo=FALSE, fig.align="center", fig.cap="Conceptual erosion boundaries of continuing erosion filter test behavior.[@cite-FosterandFell2001]", out.width="100%"}
+```{r figure-23, echo=FALSE, fig.align="center", fig.cap="Conceptual erosion boundaries of continuing erosion filter test behavior. [@cite-FosterandFell2001]", out.width="100%"}
 knitr::include_graphics("images/figure23.png")
 ```
 
@@ -64,7 +64,7 @@ knitr::include_graphics("images/figure28.png")
 
 Step 5 evaluates the excessive erosion boundary [*(D<sub>15</sub>F)<sub>EE</sub>*] from Foster and Fell [@cite-FosterandFell2001] for the representative base soil gradations after regrading (if applicable), based on *D<sub>95</sub>B*, *D<sub>90</sub>B*, *D<sub>85</sub>B*, *FC*, and *fm* and whether the base soil is non-dispersive or dispersive, using the criteria shown in Figure \@ref(fig:figure-29). The criterion for *D<sub>95</sub>B* greater than 2 mm and *FC* greater than 35 percent was obtained by a curve fit to the 0.25-g/cm2 contour of erosion loss from CEF tests from Foster and Fell [@cite-FosterandFell2001], as recommended by Fell et al. [@cite-Toolbox2008] (see Figure \@ref(fig:figure-30)).
 
-```{r figure-29, echo=FALSE, fig.align="center", fig.cap="Excessive erosion boundary (adapted from Fell et al.[@cite-Toolbox2008]).", out.width="100%"}
+```{r figure-29, echo=FALSE, fig.align="center", fig.cap="Excessive erosion boundary (adapted from Fell et al. [@cite-Toolbox2008]).", out.width="100%"}
 knitr::include_graphics("images/figure29.png")
 ```
 
